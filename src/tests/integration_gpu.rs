@@ -1,0 +1,1 @@
+// Placeholder content for src/tests/integration_gpu.rs

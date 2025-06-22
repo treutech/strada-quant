@@ -1,0 +1,38 @@
+NOTICE
+
+This product includes software developed under the name "Strada-Quant"
+by Treu Technologies as part of an open initiative for high-performance financial computing.
+
+Project Lead: Raúl Estrada  
+Organization: Treu Technologies  
+Repository: https://github.com/treutech/strada-quant
+
+────────────────────────────────────────
+LICENSE STRUCTURE
+
+• Core Modules (AGPL-3.0):
+  - Strategic engine for combinatorics and backtesting
+  - GPU-accelerated logic in Rust and CUDA
+  - Internal DSL for rules and heuristics
+  - Dynamic portfolio optimization kernels
+
+• Auxiliary Layers (MIT):
+  - Python bindings via PyO3 / pyo3-ffi
+  - CLI tools and command-line interfaces
+  - Data parsing, I/O utilities, plotting and visualization
+
+────────────────────────────────────────
+DISCLAIMER
+
+Portions of this project may link to or depend on third-party software licensed under terms compatible with AGPL-3.0 or MIT. See `LICENSES/` for details.
+
+NO WARRANTY OR LIABILITY IS PROVIDED. THIS SOFTWARE IS INTENDED FOR EDUCATIONAL AND RESEARCH PURPOSES ONLY. USE AT YOUR OWN RISK.
+
+────────────────────────────────────────
+CONTRIBUTORS
+
+- Raúl Estrada (Lead Developer)
+- Treu Technologies
+
+────────────────────────────────────────
+Any trademarks, brand names, or logos used within examples or documentation are the property of their respective owners.

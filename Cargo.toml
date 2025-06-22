@@ -1,0 +1,38 @@
+[workspace]
+resolver = "2"
+members = [
+  "crates/*",
+  "bindings/python",
+  "examples",
+]
+default-members = [
+  "crates/*",
+]
+
+[workspace.package]
+version = "0.1.0"
+authors = ["Raul Estrada <raul@treutech.io>"]
+edition = "2025"
+homepage = "https://github.com/treutech/strada-quant"
+license = "AGPL-3.0 OR MIT"
+repository = "https://github.com/treutech/strada-quant"
+description = "Open-source computational finance platform with GPU acceleration and Rust/Python interoperability."
+
+[workspace.dependencies]
+pyo3 = { version = "0.21", features = ["extension-module", "auto-initialize"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+ndarray = "0.15"
+rayon = "1.10"
+polars = { version = "0.48", features = ["lazy", "serde"] }
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+debug = true
+opt-level = "z"
+
+[profile.dev]
+debug = true
+opt-level = 1
